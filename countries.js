@@ -89,9 +89,9 @@ function darkMode(e) {
       }
     });
     regionOption.forEach((item) => {
-      // if (text.innerText == "Dark Mode") {
+      if (text.innerText == "Dark Mode") {
       item.classList.add("darkBlue");
-      // }
+      }
     });
     text.innerHTML = "Light Mode";
   } else {
