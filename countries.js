@@ -97,6 +97,8 @@ function darkMode(e) {
   } else {
     let nav = document.querySelector(".nav-bar");
     nav.classList.remove("darkBlue");
+    let body = document.getElementsByTagName("body")[0];
+    body.classList.remove("veryDarkBlue");
     let featureBar = document.querySelector(".feature-bar");
     featureBar.classList.remove("veryDarkBlue");
     let informationSection = document.querySelector(".information-section");
