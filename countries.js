@@ -80,6 +80,7 @@ function darkMode(e) {
     let searchFeature = document.querySelector(".search-feature");
     searchFeature.classList.add("darkBlue");
     let cards = document.querySelectorAll(".cardContainer");
+    let regionOption = document.querySelectorAll(".dropbtncontent");
     // console.log(cards);
     cards.forEach((item) => {
       // console.log(item);
@@ -87,10 +88,17 @@ function darkMode(e) {
         item.classList.add("darkBlue");
       }
     });
+    regionOption.forEach((item) => {
+      // if (text.innerText == "Dark Mode") {
+      item.classList.add("darkBlue");
+      // }
+    });
     text.innerHTML = "Light Mode";
   } else {
     let nav = document.querySelector(".nav-bar");
     nav.classList.remove("darkBlue");
+    let body = document.getElementsByTagName("body")[0];
+    body.classList.remove("veryDarkBlue");
     let featureBar = document.querySelector(".feature-bar");
     featureBar.classList.remove("veryDarkBlue");
     let informationSection = document.querySelector(".information-section");
@@ -107,9 +115,15 @@ function darkMode(e) {
     let searchFeature = document.querySelector(".search-feature");
     searchFeature.classList.remove("darkBlue");
     let cards = document.querySelectorAll(".cardContainer");
+    let regionOption = document.querySelectorAll(".dropbtncontent");
     // console.log(cards);
     cards.forEach((item) => {
       // console.log(item);
+      if (text.innerText == "Light Mode") {
+        item.classList.remove("darkBlue");
+      }
+    });
+    regionOption.forEach((item) => {
       if (text.innerText == "Light Mode") {
         item.classList.remove("darkBlue");
       }
