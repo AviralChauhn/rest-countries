@@ -80,12 +80,18 @@ function darkMode(e) {
     let searchFeature = document.querySelector(".search-feature");
     searchFeature.classList.add("darkBlue");
     let cards = document.querySelectorAll(".cardContainer");
+    let regionOption = document.querySelectorAll(".dropbtncontent");
     // console.log(cards);
     cards.forEach((item) => {
       // console.log(item);
       if (text.innerText == "Dark Mode") {
         item.classList.add("darkBlue");
       }
+    });
+    regionOption.forEach((item) => {
+      // if (text.innerText == "Dark Mode") {
+      item.classList.add("darkBlue");
+      // }
     });
     text.innerHTML = "Light Mode";
   } else {
@@ -107,9 +113,15 @@ function darkMode(e) {
     let searchFeature = document.querySelector(".search-feature");
     searchFeature.classList.remove("darkBlue");
     let cards = document.querySelectorAll(".cardContainer");
+    let regionOption = document.querySelectorAll(".dropbtncontent");
     // console.log(cards);
     cards.forEach((item) => {
       // console.log(item);
+      if (text.innerText == "Light Mode") {
+        item.classList.remove("darkBlue");
+      }
+    });
+    regionOption.forEach((item) => {
       if (text.innerText == "Light Mode") {
         item.classList.remove("darkBlue");
       }

@@ -107,6 +107,7 @@ span{
     display: flex;
     align-items: center;
     width: 30%;
+    border: 2px solid rgba(72, 72, 72, 0.1); 
     border-radius: 3px;
 }
 .drop-select {
@@ -119,6 +120,12 @@ span{
     border: none;
     cursor: pointer;
     box-shadow: 1px 1px 2px rgba(5, 5, 5, 0.413);
+  }
+  .drop-select a{
+    background-color: red;
+  }
+  .drop-select option{
+    background-color: var(--Dark-Blue);
   }
   .country-name{
     padding-left: 1vw;
@@ -190,7 +197,7 @@ span{
         height: 4vh;
     }
     .search-feature{
-        height: 4vh;
+        height: 5vh;
         width: 100%;
     }
     /* .nav-bar{
