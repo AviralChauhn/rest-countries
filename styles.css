@@ -173,6 +173,7 @@ span{
     .feature-bar{
         /* height: 10vh; */
         flex-direction: column;
+        padding-top: 3vh;
     }
     .drop-select{
         margin-top: 1vh;
