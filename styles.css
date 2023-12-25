@@ -15,13 +15,14 @@ body{
     background-color: var(--Very-Light-Gray);
 }
 .cardContainer{
-    /* width: 250px; */
+    width: 350px;
     height: 50%;
     margin-block: 2vh;
     margin-inline: 2vw;
     padding-bottom: 4vh;
     background-color: var(--White);
     color: black;
+    box-shadow: 2px 2px 5px rgba(5, 5, 5, 0.413);
     
 }
 .search-box{
@@ -36,7 +37,7 @@ body{
 }
 .flag-img{
     width: 100%;
-    /* height: 50%; */
+    height: 200px;
 }
 .information-section{
     width: 100%;
@@ -68,6 +69,7 @@ body{
     z-index: 1;
 }
 .nav-bar h2{
+    font-size: 1.5rem;
     font-weight: 800;
 }
 span{
@@ -86,7 +88,7 @@ span{
 }
 .feature-bar{
     padding-block: 1vw;
-    padding-inline: 10.5vw;
+    padding-inline: 7vw;
     background-color: var(--Very-Light-Gray);
     display: flex;
     justify-content: space-between;
@@ -131,6 +133,7 @@ span{
     background-color: var(--Dark-Blue);
   } */
   .country-name{
+    padding-top: 3vh;
     padding-left: 1vw;
     padding-bottom: 2vh;
     font-weight: 800;
@@ -209,13 +212,13 @@ span{
     .dark-mode{
         margin-top: 2vh;
     } */
-    .cardContainer{
+    /* .cardContainer{
         width: 80%;
-    }
+    } */
   }
   @media(max-width:450px){
     .nav-bar h2{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
     .dark-mode{
         font-size: 0.8rem;
